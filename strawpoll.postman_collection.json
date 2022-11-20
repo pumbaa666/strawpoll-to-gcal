@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "55df90d6-bfa3-43ae-b213-31084229553d",
+		"name": "Strawpoll (doodle-like)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20040026"
+	},
+	"item": [
+		{
+			"name": "create poll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Pumbaa test API\",\n  \"media\": {\n    \"id\": \"poy9NPNwnJr\",\n    \"type\": \"image\",\n    \"source\": \"https://www.example.com/source.html\",\n    \"url\": \"https://cdn.strawpoll.com/media/poll-images/poy9NPNwnJr-c.png\",\n    \"width\": 640,\n    \"height\": 480\n  },\n  \"poll_options\": [\n    {\n      \"id\": \"B2ZBXVaAEnJ\",\n      \"type\": \"text\",\n      \"position\": 0,\n      \"vote_count\": 0,\n      \"max_votes\": 0,\n      \"description\": \"This is a description text\",\n      \"is_write_in\": false,\n      \"value\": \"Reactions\"\n    }\n  ],\n  \"poll_config\": {\n    \"is_private\": true,\n    \"vote_type\": \"default\",\n    \"allow_comments\": true,\n    \"allow_indeterminate\": false,\n    \"allow_other_option\": false,\n    \"custom_design_colors\": \"{}\",\n    \"deadline_at\": 1649671274,\n    \"duplication_checking\": \"ip\",\n    \"allow_vpn_users\": false,\n    \"edit_vote_permissions\": \"admin\",\n    \"force_appearance\": \"auto\",\n    \"hide_participants\": false,\n    \"is_multiple_choice\": true,\n    \"multiple_choice_min\": 1,\n    \"multiple_choice_max\": 2,\n    \"number_of_winners\": 1,\n    \"randomize_options\": false,\n    \"require_voter_names\": false,\n    \"results_visibility\": \"always\",\n    \"use_custom_design\": false\n  },\n  \"poll_meta\": {\n    \"description\": \"This is a description text.\",\n    \"location\": \"This is a location text.\",\n    \"timezone\": \"Europe/Berlin\"\n  },\n  \"type\": \"multiple_choice\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.strawpoll.com/v3/polls",
+					"protocol": "https",
+					"host": [
+						"api",
+						"strawpoll",
+						"com"
+					],
+					"path": [
+						"v3",
+						"polls"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete poll",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Pumbaa test API\",\n  \"media\": {\n    \"id\": \"poy9NPNwnJr\",\n    \"type\": \"image\",\n    \"source\": \"https://www.example.com/source.html\",\n    \"url\": \"https://cdn.strawpoll.com/media/poll-images/poy9NPNwnJr-c.png\",\n    \"width\": 640,\n    \"height\": 480\n  },\n  \"poll_options\": [\n    {\n      \"id\": \"B2ZBXVaAEnJ\",\n      \"type\": \"text\",\n      \"position\": 0,\n      \"vote_count\": 0,\n      \"max_votes\": 0,\n      \"description\": \"This is a description text\",\n      \"is_write_in\": false,\n      \"value\": \"Reactions\"\n    }\n  ],\n  \"poll_config\": {\n    \"is_private\": true,\n    \"vote_type\": \"default\",\n    \"allow_comments\": true,\n    \"allow_indeterminate\": false,\n    \"allow_other_option\": false,\n    \"custom_design_colors\": \"{}\",\n    \"deadline_at\": 1649671274,\n    \"duplication_checking\": \"ip\",\n    \"allow_vpn_users\": false,\n    \"edit_vote_permissions\": \"admin\",\n    \"force_appearance\": \"auto\",\n    \"hide_participants\": false,\n    \"is_multiple_choice\": true,\n    \"multiple_choice_min\": 1,\n    \"multiple_choice_max\": 2,\n    \"number_of_winners\": 1,\n    \"randomize_options\": false,\n    \"require_voter_names\": false,\n    \"results_visibility\": \"always\",\n    \"use_custom_design\": false\n  },\n  \"poll_meta\": {\n    \"description\": \"This is a description text.\",\n    \"location\": \"This is a location text.\",\n    \"timezone\": \"Europe/Berlin\"\n  },\n  \"type\": \"multiple_choice\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.strawpoll.com/v3/polls/mpnbaMYXLy5",
+					"protocol": "https",
+					"host": [
+						"api",
+						"strawpoll",
+						"com"
+					],
+					"path": [
+						"v3",
+						"polls",
+						"mpnbaMYXLy5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get poll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Pumbaa test API\",\n  \"media\": {\n    \"id\": \"poy9NPNwnJr\",\n    \"type\": \"image\",\n    \"source\": \"https://www.example.com/source.html\",\n    \"url\": \"https://cdn.strawpoll.com/media/poll-images/poy9NPNwnJr-c.png\",\n    \"width\": 640,\n    \"height\": 480\n  },\n  \"poll_options\": [\n    {\n      \"id\": \"B2ZBXVaAEnJ\",\n      \"type\": \"text\",\n      \"position\": 0,\n      \"vote_count\": 0,\n      \"max_votes\": 0,\n      \"description\": \"This is a description text\",\n      \"is_write_in\": false,\n      \"value\": \"Reactions\"\n    }\n  ],\n  \"poll_config\": {\n    \"is_private\": true,\n    \"vote_type\": \"default\",\n    \"allow_comments\": true,\n    \"allow_indeterminate\": false,\n    \"allow_other_option\": false,\n    \"custom_design_colors\": \"{}\",\n    \"deadline_at\": 1649671274,\n    \"duplication_checking\": \"ip\",\n    \"allow_vpn_users\": false,\n    \"edit_vote_permissions\": \"admin\",\n    \"force_appearance\": \"auto\",\n    \"hide_participants\": false,\n    \"is_multiple_choice\": true,\n    \"multiple_choice_min\": 1,\n    \"multiple_choice_max\": 2,\n    \"number_of_winners\": 1,\n    \"randomize_options\": false,\n    \"require_voter_names\": false,\n    \"results_visibility\": \"always\",\n    \"use_custom_design\": false\n  },\n  \"poll_meta\": {\n    \"description\": \"This is a description text.\",\n    \"location\": \"This is a location text.\",\n    \"timezone\": \"Europe/Berlin\"\n  },\n  \"type\": \"multiple_choice\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.strawpoll.com/v3/polls/{{pollId}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"strawpoll",
+						"com"
+					],
+					"path": [
+						"v3",
+						"polls",
+						"{{pollId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get poll result",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Pumbaa test API\",\n  \"media\": {\n    \"id\": \"poy9NPNwnJr\",\n    \"type\": \"image\",\n    \"source\": \"https://www.example.com/source.html\",\n    \"url\": \"https://cdn.strawpoll.com/media/poll-images/poy9NPNwnJr-c.png\",\n    \"width\": 640,\n    \"height\": 480\n  },\n  \"poll_options\": [\n    {\n      \"id\": \"B2ZBXVaAEnJ\",\n      \"type\": \"text\",\n      \"position\": 0,\n      \"vote_count\": 0,\n      \"max_votes\": 0,\n      \"description\": \"This is a description text\",\n      \"is_write_in\": false,\n      \"value\": \"Reactions\"\n    }\n  ],\n  \"poll_config\": {\n    \"is_private\": true,\n    \"vote_type\": \"default\",\n    \"allow_comments\": true,\n    \"allow_indeterminate\": false,\n    \"allow_other_option\": false,\n    \"custom_design_colors\": \"{}\",\n    \"deadline_at\": 1649671274,\n    \"duplication_checking\": \"ip\",\n    \"allow_vpn_users\": false,\n    \"edit_vote_permissions\": \"admin\",\n    \"force_appearance\": \"auto\",\n    \"hide_participants\": false,\n    \"is_multiple_choice\": true,\n    \"multiple_choice_min\": 1,\n    \"multiple_choice_max\": 2,\n    \"number_of_winners\": 1,\n    \"randomize_options\": false,\n    \"require_voter_names\": false,\n    \"results_visibility\": \"always\",\n    \"use_custom_design\": false\n  },\n  \"poll_meta\": {\n    \"description\": \"This is a description text.\",\n    \"location\": \"This is a location text.\",\n    \"timezone\": \"Europe/Berlin\"\n  },\n  \"type\": \"multiple_choice\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.strawpoll.com/v3/polls/{{pollId}}/results",
+					"protocol": "https",
+					"host": [
+						"api",
+						"strawpoll",
+						"com"
+					],
+					"path": [
+						"v3",
+						"polls",
+						"{{pollId}}",
+						"results"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "X-API-Key",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "27df7086-68dc-11ed-8dbf-9f54975d6aee",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "pollId",
+			"value": "QrgeV9W5LZp"
+		}
+	]
+}
